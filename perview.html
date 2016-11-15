@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>parallax效果練習</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/affect.js"></script>
+</head>
+<style>
+	img {
+		display: block;
+		width:100%;
+	}
+	header {
+		background-color:black;
+		border:5px solid red;
+		color:white;
+		height:40px;
+		line-height: 40px;
+		text-align: center;
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		width:100%;
+	}
+	#container {
+		display: inline-block;
+		vertical-align: middle;
+		border:4px dashed green;
+		position: relative;
+		top:50px;
+		max-width: 500px;
+		height: 400px;
+		line-height: 400px;
+		padding: 3%;
+	}
+	#description{
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 500px;
+		height: auto;
+	}
+	#scene {
+	  padding: 0;
+	  margin: 0;
+	}
+	.layer {
+		list-style:none;
+		position: absolute;
+		bottom: 10%;
+  		right: 10%;
+  		left: 10%;
+  		top: 10%;
+	}
+	#content{
+		width:100%;
+	}
+	footer {
+		background-color: black;
+		color:white;
+		position: fixed;
+		width:100%;
+		height:40px;
+		left:0;
+		bottom: 0;
+		text-align: center;
+		line-height: 40px;
+	}
+</style>
+<body>
+	<header>滑動滑鼠下方圖形會跟著擺動</header>
+	<div id="content">
+		<div id="description" class="skin">Parallax Engine that reacts to the orientation of a smart device. Where no gyroscope or motion detection hardware is available, the position of the cursor is used instead.</div>
+		<div id="container" class="skin">
+			<ul id="scene">
+				<li class="layer" data-depth="0.00"><img src="image/layer1.png"></li>
+				<li class="layer" data-depth="0.20"><img src="image/layer2.png"></li>
+				<li class="layer" data-depth="0.40"><img src="image/layer3.png"></li>
+				<li class="layer" data-depth="0.20"><img src="image/layer4.png"></li>
+				<li class="layer" data-depth="0.40"><img src="image/layer5.png"></li>
+				<li class="layer" data-depth="1.00"><img src="image/layer6.png"></li>
+			</ul>
+		</div>
+	</div>
+	<footer>@著作權所有，請勿抄襲</footer>
+</body>
+</html>

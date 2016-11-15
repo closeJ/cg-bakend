@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>單頁動態網頁</title>
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<script src="js/skrollr.min.js"></script>
+</head>
+<body>
+	<div id="slide-content">
+		<div id="slides" data-0="transform:translate(0%,0%);"
+    	data-100p="transform:translate(0%,-50%);"
+    	data-200p="transform:translate(-50%,-50%);"
+    	data-300p="transform:translate(-50%,0%);">
+			<div id="slide-img1" class="slide">
+				<div class="sroller-down">往下滑</div>
+				<div class="caption">
+					<h1>高低起伏</h1>
+					<span>人生的高度在於你努力的多和少</span>
+				</div>
+			</div>
+			<div id="slide-img2" class="slide">
+				<div class="caption">
+					<h1>Color 2</h1>
+					<span>text color 2</span>
+				</div>
+			</div>
+			<div id="slide-img3" class="slide">
+				<div class="caption">
+					<h1>Color 3</h1>
+					<span>text color 3</span>
+				</div>
+			</div>
+			<div id="slide-img4" class="slide">
+				<div class="caption">
+					<h1>Color 4</h1>
+					<span>text color 4</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var sk = skrollr.init();
+</script>
+</html>
