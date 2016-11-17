@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>引導列</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+</head>
+<body>
+	<header class="head">
+		<span class="title"><a herf="#">sample</a></span>
+		<a href="" class="prev">返回</a>
+		<button id="head-search">
+			<i class="search"></i>
+			<span class="offleft">搜尋</span>
+		</button>
+		<button id="head-navbtn">
+			<span class="offleft">開啟選單</span>
+		</button>
+	</header>
+	<nav class="nav">
+		<button id="classbtn">
+			<span class="offleft">關閉選單</span>
+		</button>
+		<ul>
+			<li><a href="#">content</a></li>
+			<li><a href="#">content2</a></li>
+			<li><a href="#">content3</a></li>
+			<li><a href="#">content4</a></li>
+			<li><a href="#">content5</a></li>
+		</ul>
+	</nav>
+	<div id="wrapper">
+		<div class="content">
+	<p>對妹妹的吐槽，李晉翔毫無反應，他繼續向歐陽丞磊說：「我們家親戚很多，算是大家族，你會害怕嗎？」
+
+　　他一笑，答道：「如果害怕的話，就不會走上這一條路了。」
+
+　　李晉翔貌似對他的答案很滿意，便轉而向李允禾，問：「你呢？媽媽可能還好，你知道爸爸他……很傳統的吧？」
+
+　　「我知道，但我還是想跟他在一起。」方才的害怕已經消失，李允禾在說這句話時，充滿了堅定不移。
+
+　　「好！」李晉翔坐挺了身體，說：「哥哥會支持你們的。」
+
+　　兩人同時說了謝謝，而坐在一旁的李曉若來回看了三人，最後才說：「我想你們也思考了很多，才能像現在這樣接受彼此吧？」
+
+　　她續道：「我也會支持你們的。」
+
+　　雖然兄姊接受了，李允禾卻沒有因此鬆了口氣，他開始思考被父母發現之後，他該怎麼辦？自己真的能熬得過嗎？到時候又會發生什麼事情？只要一思及，他便感到心慌。
+
+　　李晉翔開始話家常，說他們是經過這裡，順道拿鑰匙過來，想說給個驚喜，沒想到雙方都給了彼此驚喜，然後開始跟歐陽丞磊留聯絡方式，李曉若還一直扼脕地說：「好男人不是死會了、還沒出生，就是……」自己的哥哥。知道李晉翔聽到會很樂，所以她故意沒說出口。
+
+　　她看了眼前氣質不凡的歐陽丞磊，他瓜子臉上的那雙炯炯有神的黑瞳、濃眉與高直的鼻樑、無論是笑還是緊抿著都好看的薄唇，還有勻稱的體格。李曉若嘆了口氣，之後還對歐陽丞磊細緻的皮膚發出抗議。
+
+　　「上天不公！」
+
+　　歐陽丞磊笑了，一對小酒窩露出來。
+
+　　「酒窩！」她一叫，向李允禾說：「你真是賺到了一個極品男。」
+
+　　「好了、好了，保持點形象，回家了。」李晉翔拉起妹妹。
+
+　　被李曉若一鬧，李允禾的心情好了一些，但沉鬱還是積在心裡。他們離開後，知道他心中不安的歐陽丞磊，伸手撫上他的臉頰。
+
+　　李允禾覆上他的大掌，然後握住他指節分明的手指。
+
+　　靜寂驅走了所有的聲音，緊緊包圍住兩人。李允禾感受著從手上傳來的他的體溫，他是李允禾幸福快樂的來源。
+
+　　「沒事吧？」
+
+　　歐陽丞磊磁性的嗓音響起，稍微穩住了李允禾漂浮的心。
+
+　　「沒事，只是被嚇到了。」他牽動嘴角，但隨即又垂下。「我們不會被拆散吧？」
+
+　　他抱住李允禾，用全身的溫暖包覆住他，堅定地說：「不會。」
+ </p>
+	</div>
+	<nav class="tab">
+		<ul>
+			<li><a href="#">首頁</a></li>
+			<li><a href="#">搜尋</a></li>
+			<li><a href="#">購物</a></li>
+			<li><a href="#">登入</a></li>
+			<li><a href="#">新聞</a></li>
+		</ul>
+	</nav>
+</body>
+<script>
+$(document).ready(function(){
+	$("#head-navbtn,#classbtn").click(function(){
+		$(".nav").slideToggle('is-open');
+	});
+
+});
+</script>
+</html>
